@@ -1,0 +1,796 @@
+/* Cascading Style Sheet */
+
+/*************** Header Section ***************/
+
+body{
+	font-family: "Inter", sans-serif;
+	margin: 0;
+}
+
+.cont{
+	margin: 0;
+	background-color: #3B5D50;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 20% 30% 50%;
+}
+
+.nav div{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+}
+
+.nav h1{
+	display: block;
+	color: white;
+	font-weight: 900;
+	margin: auto;
+}
+
+.nav input{
+	width: 85%;
+	height: 25px;
+	margin: auto;
+	border: none;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+.nav ul{
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	overflow: hidden;
+	margin: auto;
+}
+
+.nav li{
+	float: left;
+	width: 100px;
+	text-align: left;
+}
+
+.nav ul a{
+	display: block;
+	text-decoration: none;
+	color: #ccc;
+	padding: 8px 8px;
+	font-weight: 700;
+}
+
+.nav li::after{
+	content: "";
+	position: absolute;
+	background-color: #ffbb00;
+	height: 4px;
+	width: 0%;
+	transition: 0.9s;
+}
+
+.nav ul a:hover{
+	color: #fff;
+}
+
+.nav li:hover::after{
+	width: 6%;
+}
+
+
+/*************** Gallary ***************/
+
+.glry{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	width: 100%;
+	height: 550px;
+}
+
+.glry #glrytxt{
+	padding-left: 90px;
+	padding-top: 60px;
+	padding-right: 15px;
+}
+
+.glry h1{
+	font-size: 50px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.glry p{
+	color: white;
+	padding-bottom: 75px;
+}
+
+.glry button{
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	border: 2px solid transparent;
+	background-color: #ffbb00;
+	color: #333;
+	font-weight: 600;
+	font-size: 15px;
+	margin: 5px;
+}
+
+.glry button:hover{
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #eee;
+}
+
+.glry #glryimg{
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+/*************** Product Item ***************/
+
+.contwhite{
+	background-color: #fff;
+	margin: 0;
+}
+
+.item{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	width: 100%;
+	height: 480px;
+	padding-top: 100px;
+}
+
+.item #txt{
+	padding-left: 90px;
+}
+
+.item #txt h1{
+	font-size: 30px;
+	padding-bottom: 5px;
+}
+
+.item #txt p{
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+
+.item #txt button{
+	width: 140px;
+	height: 50px;
+	border-radius: 30px;
+	border: 2px solid transparent;
+	background-color: #333;
+	color: #eee;
+	font-weight: 600;
+	font-size: 15px;
+	margin: 5px; 
+}
+
+.item #txt button:hover{
+	background-color: transparent;
+	color: #222;
+	border: 2px solid #444;
+}
+
+.item #pdct{
+	padding: 5px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.item img{
+	width: 250px;
+	height: auto;
+}
+
+
+/*************** Feature ***************/
+
+.contgray{
+	background-color: #f8f8f8;
+	margin: 0;
+}
+
+.feature{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	width: 100%;
+	height: 750px;
+	padding-top: 150px;
+}
+
+.feature img{
+	width: 90%;
+	margin-top: 50px;
+	border: none;
+	border-radius: 50px;
+}
+
+.feature .double{
+	padding-left: 90px;
+	padding-right: 20px;
+}
+
+.fourgrid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.fourgrid img{
+	width: 40px;
+}
+
+
+/*************** Footer Section ***************/
+
+footer{
+	background-color: #ffffff;
+	margin: 0;
+}
+
+footer .subbody{
+	display: grid;
+	grid-template-columns: 65% 35%;
+}
+
+footer .subscribe{
+	padding-left: 90px;
+	padding-right: 90px;
+	padding-top: 50px;
+	display: float;
+}
+
+footer .subscribe h2{
+	color: #416740;
+	font-size: 20px;
+}
+
+footer .subscribe i{
+	color: #bbbbbb;
+}
+
+footer .subscribe input{
+	width: 260px;
+	height: 35px;
+	margin: 5px;
+	border-radius: 10px;
+	border: 1.8px solid #aaa;
+}
+
+footer .subscribe button{
+	width: 60px;
+	height: 40px;
+	background-color: #416740;
+	vertical-align: middle;
+	margin-left: 10px;
+	border: none;
+	border-radius: 8px;
+}
+
+footer .subscribe button:hover{
+	background-color: #419940;
+}
+
+footer .subscribe button:active{
+	border: 2px outset #555;
+	background-color: #41be40;
+}
+
+footer .subscribe button img{
+	width: 25px;
+	height: 25px;
+	padding: 2px;
+	margin: auto;
+}
+
+footer img{
+	margin-top: -100px;
+	padding-left: 10px;
+	width: 350px;
+	height: auto;
+}
+
+footer .footer{
+	display: grid;
+	grid-template-columns: 30% 17.5% 17.5% 17.5% 17.5%;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+footer .footer div{
+	padding: 5px;
+}
+
+footer .footer h1{
+	color: #416740;
+}
+
+footer .footer p{
+	font-size: 13px;
+	color: #333;
+}
+
+footer .footer ul{
+	list-style: none;
+	padding-top: 60px;
+}
+
+footer .footer li{
+	padding: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+	justify-content: center;
+	width: 150px;
+}
+
+footer .footer a{
+	text-decoration: none;
+	color: #444;
+}
+
+.footer a:hover{
+	color: #000;
+}
+/*
+.footer li::after{
+	content: "";
+	position: absolute;
+	background-color: #000;
+	height: 3px;
+	width: 5%;
+}
+
+.footer li:hover::after{
+	width: 0%;
+} */
+
+.socialbtn{
+	padding-left: 90px;
+}
+
+.socialbtn button{
+	width: 35px;
+	height: 35px;
+	background-color: #d4e4d3;
+	border: none;
+	border-radius: 30px;
+	margin: 5px;
+}
+
+.socialbtn button img{
+	width: 15px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	padding-top: 4.5px;
+}
+
+.socialbtn button:hover{
+	background-color: #a4d8a0;
+}
+
+.socialbtn button:active{
+	background-color: #ffaa00;
+	border: 2px outset;
+}
+
+.divider .solid{
+	border: 1px solid #444;
+	margin-left: 90px;
+	margin-right: 70px;
+	margin-top: 60px;
+}
+
+.copyright{
+	display: grid;
+	grid-template-columns: 55% 45%;
+}
+
+.copyright p{
+	padding-left: 90px;
+	font-size: 15px;
+	
+}
+
+.copyright ul{
+	list-style: none;
+	float: right;
+}
+
+.copyright li{
+	display: inline;
+	padding-right: 75px;
+}
+
+/*************** Login form ***************/
+
+.loginarea{
+	width: 100%;
+	height: 750px;
+	background-color: #3B5D50;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.loginarea .loginform{
+	margin: auto;
+	width: 550px;
+	height: 500px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	border-radius: 25px;
+}
+
+.loginarea .loginform h1{
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.loginarea .loginform label{
+	padding-left: 70px;
+	font-weight: bold;
+	color: #333;
+}
+
+.loginarea .loginform input{
+	margin-left: 70px;
+	width: 400px;
+	height: 45px;
+	border: 1.5px solid #555;
+	border-radius: 18px;
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: transparent;
+}
+
+.loginarea .loginform button{
+	width: 300px;
+	height: 40px;
+	margin-left: 125px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #609162;
+	color: #eee;
+}
+
+.loginarea .loginform button:hover{
+	background-color: #588458;
+	color: #fff;
+}
+
+.loginarea .loginform button:active{
+	background-color: #3b7f3b;
+	color: #fff;
+	border: 2px outset #888;
+}
+
+.loginarea .loginform h4{
+	text-align:center;
+	padding-top: 10px;
+	color: #333;
+}
+
+.loginarea .loginform h4:hover{
+	color: #111;
+}
+
+/*************** SignUp form ***************/
+
+.signuparea{
+	width: 100%;
+	height: 1050px;
+	background-color: #3B5D50;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.signuparea .signupform{
+	margin: auto;
+	width: 900px;
+	height: 700px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	border-radius: 25px;
+}
+
+.signuparea .signupform .signupgrid{
+	display: grid;
+	grid-template-columns: 49.5% 1% 49.5%;
+	width: 100%;
+	margin: 10px;
+}
+
+.signuparea .signupform h1{
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.signuparea .ver-line{
+	border: 1px solid #777;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.signuparea .hor-line{
+	border: 1px solid #777;
+	width: 0px;
+	height: 500px;
+}
+
+.signuparea .signupform label{
+	padding-left: 50px;
+	font-weight: bold;
+	color: #333;
+}
+
+.signuparea .signupform input{
+	margin-left: 50px;
+	width: 280px;
+	height: 30px;
+	border: 1.5px solid #555;
+	border-radius: 18px;
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: transparent;
+}
+
+.signuparea .signupform .gndr{
+	margin: 20px 0;
+	padding: 20px;
+	padding-left: 50px;
+	width: 15px;
+	vertical-align: middle;
+}
+
+.signuparea .signupform .gndrcld{
+	margin: 20px 0;
+	padding: 5px;
+	width: 15px;
+	vertical-align: middle;
+}
+
+.signuparea .signupform button{
+	width: 300px;
+	height: 40px;
+	margin-left: 300px;
+	border: none;
+	border-radius: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #609162;
+	color: #eee;
+}
+
+.signuparea .signupform button:hover{
+	background-color: #588458;
+	color: #fff;
+}
+
+.signuparea .signupform button:Active{
+	background-color: #3b7f3b;
+	color: #fff;
+	border: 2px outset #888;
+}
+
+/*************** Product Page / Shop ***************/
+
+.shop{
+	height: 2050px;
+	background-color: #f9f9f9;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.shophead{
+	display: grid;
+	grid-template-columns: 20% 50% 30%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.shophead div{
+	width: 100%;
+	margin:auto;
+}
+
+.shophead input{
+	width: 70%;
+	margin-left: 30px;
+	height: 30px;
+	border: 1.5px solid #777;
+	border-radius: 8px;
+}
+
+.shophead button{
+	text-align: center;
+	padding: 8px 15px;
+	height: auto;
+	border: none;
+	border-radius: 20px;
+	margin: 3px;
+	background-color: #70b068;
+	font-weight: bold;
+}
+
+.shophead .btn1{
+	background-color: #3B5D50;
+	border: 1px solid transparent;
+	color: white;
+	font-weight: bold;
+}
+.shophead .btn2{
+	background-color: #fff;
+	border: 1px solid #aaa;
+	font-weight: bold;
+}
+
+.shophead .btn3{
+	background-color: #fff;
+	border: 1px solid #aaa;
+	font-weight: bold;
+}
+
+.shophead button:hover{
+	background-color: #588458;
+	color: #fff;
+}
+
+.shophead button:active{
+	background-color: #3b7f3b;
+	color: #fff;
+	border: 1px outset #888;
+}
+
+.shop hr{
+	border: 0.4px solid #ddd;
+}
+
+.shop .pdct-item{
+	display: grid;
+	grid-template-columns: 33.33%  33.33% 33.33%;
+	height: 100px;
+}
+
+.shop .pdct-item div{
+	background-color: #fff;
+	margin: 20px;
+	border: 2px solid #efefef;
+	border-radius: 20px;
+}
+
+.shop .pdct-item div:hover{
+	background-color: #fff;
+	border: 2px solid #ddd;
+	border-radius: 20px;
+}
+
+.shop .pdct-item div:active{
+	background-color: #fff;
+	border: 2px outset #ccc;
+	border-radius: 20px;
+}
+
+.shop .pdct-item div img{
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+
+.shop .pdct-item div h2{
+	font-size: 20px;
+	padding-left: 20px;
+	margin: 5px 0;
+	color: #416740;
+}
+
+.shop .pdct-item div h3{
+	font-size: 20px;
+	padding-left: 20px;
+	margin: 5px 0;
+}
+
+.shop .pdct-item div p{
+	font-size: 12px;
+	padding-left: 20px;
+	margin: 15px 0;
+}
+
+/*************** Cart Page / Shop ***************/
+
+
+.cart{
+	background-color: #f9f9f9;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.carthead{
+	padding-left: 10px;
+}
+
+.cart hr{
+	border: 0.4px solid #ddd;
+}
+
+.cart-item {
+	margin: 30px auto;
+	padding-bottom: 80px;
+}
+
+.cart-item table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.cart-item table .pdct_dtls {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cart-item table th{
+	text-align: left;
+	padding: 10px;
+	color: #fff;
+	background-color: #3B5D50;
+}
+
+.cart-item table td{
+	padding: 10px 15px;
+}
+
+.cart-item table td input{
+	width: 35px;
+	height: 20px;
+	padding: 5px;
+}
+
+.cart-item table td a{
+	color: #3B5D50;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 2px 6px;
+}
+
+.cart-item table td a:hover{
+	color: #fff;
+	background-color: #3B5D50;
+	border-radius: 5px;
+}
+
+.cart-item table td img{
+	width: 120px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.cart-item .total_price{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cart-item .total_price table{
+	border-top: 3px solid #ddd;
+	width: 100%;
+	max-width: 330px;
+}
+
+.cart-item td:last-child{
+	text-align: right;
+}
+
+.cart-item th:last-child{
+	text-align: right;
+}
